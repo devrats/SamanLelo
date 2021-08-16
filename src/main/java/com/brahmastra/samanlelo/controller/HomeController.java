@@ -22,4 +22,10 @@ public class HomeController {
         model.addAttribute("title","Home");
         return "index";
     }
+
+    @RequestMapping("/checkout")
+    public String checkout(Model model){
+        model.addAttribute("title","Check Out");
+        return "checkout";
+    }
 }
