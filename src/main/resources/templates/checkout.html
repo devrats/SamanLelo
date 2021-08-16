@@ -2,9 +2,51 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="head::frag(title)">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Cart-Page</title>
+    <link rel="stylesheet" type="text/css" href="/cart/cart.css">
 </head>
 <body>
-<h1>Hey Man This Is Checkout</h1>
+<div class="container">
+    <h1>Shopping Cart</h1>
+    <div class="cart">
+        <div class="products">
+            <div class="product">
+                <img src="shoes.jpg">
+                <div class="product-info">
+                    <h3 class="product-name">Bread.jpeg</h3>
+                    <h4 class="product-price">₹ 30</h4>
+                    <p class="product-quantity">Qnt: <input value="1" name="">
+                    <p class="product-remove">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <span class="remove">Remove</span>
+                    </p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="biscuit.jpeg">
+                <div class="product-info">
+                    <h3 class="product-name">Biscuit</h3>
+                    <h4 class="product-price">₹ 20</h4>
+                    <p class="product-quantity">Qnt: <input value="1" name="">
+                    <p class="product-remove">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                        <span class="remove">Remove</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="cart-total">
+            <p>
+                <span>Total Price</span>
+                <span>₹ 50</span>
+            </p>
+            <p>
+                <span>Number of Items</span>
+                <span>2</span>
+            </p>
+            <a href="#">Proceed to Checkout</a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
