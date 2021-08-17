@@ -38,6 +38,7 @@ const start = () => {
         let spans = document.getElementsByTagName("link")[1]
         spans.remove()
     }
+    $(".pic").attr("th:src","@{/media/two.jpg}")
 }
 
 const toggle = () => {
@@ -55,6 +56,10 @@ const toggle = () => {
             $(".sidebar").prop("disabled", "true")
             $(".bar").css("display", "block")
             $(".bar").css("padding-left", "2px")
+            $(".pic").css("padding-left","0px")
+            $(".pic1").css("padding-left","0px")
+            $(".pic2").css("padding-left","0px")
+            $(".prev").css("margin-left","0px")
             $(".dashboard_banner").css("padding-left", "5%")
         } else {
             $(".sidebar").css("display", "block")
@@ -80,6 +85,41 @@ const toggleBar = () => {
             $(".sidebar").css("display", "block")
             $(".bar").css("display", "none")
             $(".dashboard_banner").css("padding-left", "15%")
+            $(".pic").css("padding-left","15%")
+            $(".pic1").css("padding-left","15%")
+            $(".pic2").css("padding-left","15%")
+            $(".prev").css("margin-left","15%")
         }
+    }
+}
+const preving = () =>{
+    if($(".pic").is(":visible")){
+
+    }
+    else if($(".pic1").is(":visible")){
+        $(".pic").css("display","block")
+        $(".pic1").css("display","none")
+        $(".pic2").css("display","none")
+    }
+    else if($(".pic2").is(":visible")){
+        $(".pic").css("display","none")
+        $(".pic1").css("display","block")
+        $(".pic2").css("display","none")
+    }
+}
+
+const nexting = () =>{
+    if($(".pic").is(":visible")){
+        $(".pic").css("display","none")
+        $(".pic1").css("display","block")
+        $(".pic2").css("display","none")
+    }
+    else if($(".pic1").is(":visible")){
+        $(".pic").css("display","none")
+        $(".pic1").css("display","none")
+        $(".pic2").css("display","block")
+    }
+    else if($(".pic2").is(":visible")){
+
     }
 }

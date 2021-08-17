@@ -8,6 +8,11 @@
 <div th:replace="navbar::nav"></div>
 <div th:replace="sidebar::side"></div>
 <i class="fas fa-bars bar" onclick="toggleBar()"></i>
+<img src="#" th:src="@{/media/one.jpg}" class="pic" alt="">
+<img src="#" th:src="@{/media/two.jpg}" class="pic1" alt="">
+<img src="#" th:src="@{/media/three.jpg}" class="pic2" alt="">
+<a class="prev" onclick="preving()">&#10094;</a>
+<a class="next" onclick="nexting()">&#10095;</a>
 <section class="dashboard_banner" id="banneres">
     <div class="row">
         <div class="col-sm">
@@ -75,5 +80,27 @@
     </div>
     <div th:replace="about::about"></div>
 </section>
+<script>
+
+    const frame = () => {
+        $(".pic").css("display", "none")
+        $(".pic1").css("display", "block")
+        $(".pic2").css("display", "none")
+        setTimeout(frame1,3500)
+    }
+    const frame1 = () => {
+        $(".pic").css("display", "none")
+        $(".pic1").css("display", "none")
+        $(".pic2").css("display", "block")
+        setTimeout(frame2,3500)
+    }
+    const frame2 = () => {
+        $(".pic").css("display", "block")
+        $(".pic1").css("display", "none")
+        $(".pic2").css("display", "none")
+        setTimeout(frame,3500)
+    }
+    setTimeout(frame,3500)
+</script>
 </body>
 </html>
