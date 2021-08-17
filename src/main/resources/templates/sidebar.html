@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head th:replace="Head::frag(${title})">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div class="sidebar" th:fragment="side">
+
+    <i onclick="toggle()" class="fas fa-times cross"></i>
+    <h4>Samaan Lelo</h4>
+    <a href="#" th:href="@{/}" th:classappend="${title}=='Saman Lelo' ? 'present' : ''"> <i
+            class="fas fa-tachometer-alt"></i> HOME</a>
+    <a href="#" th:href="@{/user/grocery}" th:classappend="${title}=='Grocery' ? 'present' : ''"> <i
+            class="fas fa-shopping-basket"></i> GROCERY</a>
+    <a href="#" th:href="@{/user/pantry}" th:classappend="${title}=='Pantry' ? 'present' : ''"> <i
+            class="fas fa-birthday-cake"></i> PANTRY</a>
+    <a href="#" th:href="@{/user/fruits}" th:classappend="${title}=='Fruits' ? 'present' : ''"> <i
+            class="fas fa-apple-alt"></i> FRUITS</a>
+    <a href="#" th:href="@{/user/vegetables}" th:classappend="${title}=='Vegetables' ? 'present' : ''"> <i
+            class="fas fa-carrot"></i> VEGETABLES</a>
+    <a href="#" th:href="@{/user/frozenFood}" th:classappend="${title}=='Frozen Food' ? 'present' : ''"> <i
+            class="fas fa-fish"></i></i> FROZEN FOOD</a>
+    <a href="#" th:href="@{/user/DAIRY}" th:classappend="${title}=='Dairy' ? 'present' : ''"> <i
+            class="fas fa-cow"></i> DAIRY</a>
+    <a href="#" th:href="@{/user/profile}" th:classappend="${title}=='Profile' ? 'present' : ''"> <i
+            class="fas fa-user-circle"></i> PROFILE</a>
+    <a href="#" th:href="@{/user/cart}" th:classappend="${title}=='Cart' ? 'present' : ''"> <i
+            class="fas fa-shopping-cart"></i> CART</a>
+    <a href="#" th:href="@{/user/settings}" th:classappend="${title}=='Settings' ? 'present' : ''"> <i
+            class="fas fa-cogs"></i> SETTINGS</a>
+    <a href="#" th:href="@{/logout}" class="bottom"> <i class="fas fa-sign-out-alt"></i> LOG OUT</a>
+</div>
+</body>
+</html>

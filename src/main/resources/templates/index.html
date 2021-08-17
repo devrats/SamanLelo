@@ -1,10 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="head::frag(title)">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head th:replace="head::frag(${title})">
     <meta charset="UTF-8">
     <title></title>
 </head>
-<body>
-  <h1>Hey Man</h1>
+<body onload="start()">
+<div th:replace="navbar::nav"></div>
+<div th:replace="sidebar::side"></div>
+<i class="fas fa-bars bar" onclick="toggleBar()"></i>
+<section class="dashboard_banner" id="banneres">
+    <div class="row">
+        <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img src="#" th:src="@{/media/grocery.jpg}" class="card-img-top" alt="#">
+                <div class="card-body">
+                    <h5 class="card-title">Grocery</h5>
+                    <p class="card-text">Up to 30% off</p>
+                    <a href="#" class="btn btn-outline-danger btn-warning bot">Go To Deals</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img src="#" th:src="@{/media/pantry.jpg}" class="card-img-top" alt="#">
+                <div class="card-body">
+                    <h5 class="card-title">Pantry</h5>
+                    <p class="card-text">Up to 20% off</p>
+                    <a href="#" class="btn btn-outline-danger btn-warning bot">Go To Deals</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img src="#" class="card-img-top" th:src="@{/media/vegetables.jpg}" alt="#">
+                <div class="card-body">
+                    <h5 class="card-title">Vegetables</h5>
+                    <p class="card-text">Up to 45% off</p>
+                    <a href="#" class="btn btn-outline-danger btn-warning bot">Go To Deals</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row second">
+        <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img src="#" class="card-img-top" th:src="@{/media/fruits.jpg}" alt="#">
+                <div class="card-body">
+                    <h5 class="card-title">Fruits</h5>
+                    <p class="card-text">Up to 30% off</p>
+                    <a href="#" class="btn btn-outline-danger btn-warning bot">Go To Deals</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img src="#" class="card-img-top" alt="#" th:src="@{/media/dairy.jpg}">
+                <div class="card-body">
+                    <h5 class="card-title">Dairy</h5>
+                    <p class="card-text">Up to 20% off</p>
+                    <a href="#" class="btn btn-outline-danger btn-warning bot">Go To Deals</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm">
+            <div class="card" style="width: 18rem;">
+                <img src="#" class="card-img-top" alt="#" th:src="@{/media/frozen.jpg}">
+                <div class="card-body">
+                    <h5 class="card-title">Frozen Food</h5>
+                    <p class="card-text">Up to 45% off</p>
+                    <a href="#" class="btn btn-outline-danger btn-warning bot">Go To Deals</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div th:replace="about::about"></div>
+</section>
 </body>
 </html>
