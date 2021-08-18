@@ -23,9 +23,9 @@ public class HomeController {
         return "index";
     }
 
-    @RequestMapping("/checkout")
+    @RequestMapping("/user/cart")
     public String checkout(Model model){
-        model.addAttribute("title","Check Out");
+        model.addAttribute("title","Check-Out");
         return "checkout";
     }
 }
