@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <title></title>
 </head>
-<body>
+<body onload="start()">
+<div th:replace="navbar::nav"></div>
+<div th:replace="sidebar::side"></div>
+<i class="fas fa-bars bar" onclick="toggleBar()"></i>
+<section class="dashboard_banner">
 <div class="container">
-    <h1>Shopping Cart</h1>
+    <h1 class="cart-head">Shopping Cart</h1>
     <div class="cart">
         <div class="products">
             <div class="product">
-                <img src="bread.jpeg">
+                <img src="#" th:src="@{/media/bread.jpg}">
                 <div class="product-info">
                     <h3 class="product-name">Bread</h3>
                     <h4 class="product-price">₹ 30</h4>
-                    <p class="product-quantity">Qnt: <input value="1" name="">
+                    <p class="product-quantity">Qnt: 1
                     <p class="product-remove">
                         <i class="fa fa-trash" aria-hidden="true"></i>
                         <span class="remove">Remove</span>
@@ -22,11 +26,11 @@
                 </div>
             </div>
             <div class="product">
-                <img src="biscuit.jpeg">
+                <img src="#" th:src="@{/media/biscuit.jpg}">
                 <div class="product-info">
                     <h3 class="product-name">Biscuit</h3>
                     <h4 class="product-price">₹ 20</h4>
-                    <p class="product-quantity">Qnt: <input value="1" name="">
+                    <p class="product-quantity">Qnt: 1
                     <p class="product-remove">
                         <i class="fa fa-trash" aria-hidden="true"></i>
                         <span class="remove">Remove</span>
@@ -35,17 +39,63 @@
             </div>
         </div>
         <div class="cart-total">
-            <p>
-                <span>Total Price</span>
-                <span>₹ 50</span>
-            </p>
+            <table class="table text-center">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Price</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Bread</td>
+                    <td>1</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Biscuit</td>
+                    <td>1</td>
+                    <td>20</td>
+                </tr>
+                </tbody>
+            </table>
             <p>
                 <span>Number of Items</span>
                 <span>2</span>
+            </p>
+            <p>
+                <span>Sub Total</span>
+                <span>50</span>
+            </p>
+            <p>
+                <span>Discount</span>
+                <span>-10</span>
+            </p>
+            <p>
+                <span>Tax (18%)</span>
+                <span>9</span>
+            </p>
+            <p>
+                <span>Delivery Charge</span>
+                <span>0</span>
+            </p>
+            <p>
+                <span>Total</span>
+                <span>49</span>
+            </p>
+            <p>
+                <span>You Saved</span>
+                <span>10</span>
             </p>
             <a href="#">Proceed to Checkout</a>
         </div>
     </div>
 </div>
+    <div th:replace="about::about"></div>
+</section>
 </body>
 </html>

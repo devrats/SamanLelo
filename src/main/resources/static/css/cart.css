@@ -30,6 +30,7 @@
     overflow: hidden;
     border: 1px solid silver;
     margin-bottom: 20px;
+    background-color: whitesmoke;
 }
 
 .product:hover{
@@ -39,8 +40,8 @@
 }
 
 .product > img{
-    width: 300px;
-    height: 200px;
+    width: 25%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -90,22 +91,22 @@
     flex: 0.25;
     margin-left: 20px;
     padding: 20px;
-    height: 240px;
+    height: auto;
     border: 1px solid silver;
     border-radius: 5px;
+    background-color: whitesmoke;
 }
 
 .cart-total p{
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-    font-size: 20px;
+    font-size: 12px;
 }
 
 .cart-total a{
     display: block;
     text-align: center;
-    height: 40px;
     line-height: 40px;
     background-color: tomato;
     color: white;
@@ -149,3 +150,11 @@
     }
 }
 
+.cart-head{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    color: darkviolet;
+    font-size: 12vh;
+    font-family: "Times New Roman";
+}
