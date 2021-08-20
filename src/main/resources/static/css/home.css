@@ -212,3 +212,13 @@ img {
     height: 100%;
     width: 100%;
 }
+
+.dropdown{
+    z-index: 8;
+}
+
+.dropdown-item{
+    font-family: "Bookman Old Style";
+    font-style: italic;
+    font-size: 15px;
+}

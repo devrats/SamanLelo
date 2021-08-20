@@ -19,9 +19,16 @@
         </form>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" th:classappend="${title}=='Profile' ? 'active' : ''" aria-current="page"
-                       href="#" th:href="@{/user/profile}">PROFILE</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" th:href="@{/user/profile}" id="navbarDropdown"
+                       role="button" data-bs-toggle="dropdown"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        PROFILE
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#" th:href="@{/user/profile}">PROFILE</a>
+                        <a class="dropdown-item" href="#" th:href="@{/user/previousOrder}">PREVIOUS ORDER</a>
+                        <a class="dropdown-item" href="#" th:href="@{/user/currentOrder}">ORDERS ON THE WAY</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" th:classappend="${title}=='Cart' ? 'active' : ''" href="#"
