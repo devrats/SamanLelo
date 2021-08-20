@@ -5,7 +5,7 @@
     <title>Title</title>
 </head>
 <body>
-<div th:fragment="nav1" class="layout1">
+<div th:fragment="nav1">
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark second-nav justify-content-center">
     <div class="container-fluid container">
         <button onclick="inc()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -27,7 +27,7 @@
                        th:href="@{/vegetable}">VEGETABLE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link sec-nav" th:classappend="${title}=='Frutis' ? 'active' : ''" href="#"
+                    <a class="nav-link sec-nav" th:classappend="${title}=='Fruits' ? 'active' : ''" href="#"
                        th:href="@{/fruit}">FRUITS</a>
                 </li>
                 <li class="nav-item">
