@@ -9,9 +9,9 @@
 
 .form-box {
     width: 380px;
-    height: 480px;
+    height: 450px;
     position: relative;
-    margin: 6% auto;
+    margin: 10rem auto;
     background: white;
     padding: 5px;
 }
@@ -34,7 +34,7 @@
     position: relative;
 }
 
-#btn {
+.btn2 {
     top: 0;
     left: 0;
     position: absolute;
@@ -67,6 +67,9 @@
 }
 
 .input-field {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
     width: 100%;
     border-left: black;
     border-top: black;
@@ -94,21 +97,6 @@
 
 }
 
-span {
-    color: black;
-    font-size: 2vh;
-    bottom: 7vh;
-    position: absolute;
-}
-
-#login {
-    left: 9vh;
-}
-
-#register {
-    left: 75vh;
-}
-
 .input-grp1 {
     top: 30vh;
     position: absolute;
@@ -116,3 +104,15 @@ span {
     transition: 0.5s;
     display: none;
 }
+
+.btn1 {
+    top: 0;
+    left: 120px;
+    position: absolute;
+    width: 125px;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+

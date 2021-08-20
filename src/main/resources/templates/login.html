@@ -5,14 +5,16 @@
     <title></title>
 </head>
 <body>
+<div th:replace="navbar::nav"></div>
+<div th:replace="homenav::nav1"></div>
 <div class="account-bg">
     <div class="form-box">
         <div class="button-box">
-            <div id="btn"></div>
+            <div class="btn-c btn2"></div>
             <button type="button" class="toggle-btn" onclick="login()">
                 Log In
             </button>
-            <button type="button" class="toggle-btn" onclick="register()">
+            <button type="button" class="toggle-btn" onclick="login()">
                 Register
             </button>
         </div>
@@ -23,56 +25,39 @@
         </div>
         <form id="login" class="input-grp">
             <input
-                    type="number"
+                    type="text"
                     class="input-field"
-                    placeholder="Contact Number"
+                    placeholder="Username"
                     required
             />
             <input
-                    type="text"
+                    type="Password"
                     class="input-field"
-                    placeholder="Password"
+                    placeholder="password"
                     required
             />
-            <input type="checkbox" class="check-box" /><span>"Remember me"</span>
             <button type="submit" class="submit-btn">Log In</button>
         </form>
-        <form id="register" class="input-grp">
+        <form id="login1" class="input-grp1">
             <input
-                    type="number"
+                    type="text"
                     class="input-field"
-                    placeholder="Contact Number"
+                    placeholder="Email Address"
                     required
             />
             <input
-                    type="text"
+                    type="password"
                     class="input-field"
                     placeholder="Password"
                     required
             />
-            <input type="checkbox" class="check-box" /><span
-        >"I agree to the terms and conditions"</span
-        >
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Agree Term and condition</label>
+            </div>
             <button type="submit" class="submit-btn">Register</button>
         </form>
     </div>
 </div>
-<script>
-    var x = document.getElementById("login");
-    var y = document.getElementById("register");
-    var z = document.getElementById("btn");
-
-    function register() {
-        x.style.left = "-80vh";
-        y.style.left = "7vh";
-        z.style.left = "19vh";
-    }
-
-    function login() {
-        x.style.left = "9vh";
-        y.style.left = "65vh";
-        z.style.left = "0";
-    }
-</script>
 </body>
 </html>

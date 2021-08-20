@@ -139,3 +139,18 @@ const inc = () =>{
     }
 }
 
+const login = () =>{
+    if ($(".input-grp1").is(":visible")){
+        $(".input-grp1").css("display","none")
+        $(".input-grp").css("display","block")
+        $(".btn-c").addClass("btn2")
+        $(".btn-c").removeClass("btn1")
+    } else {
+        console.log("hello")
+        $(".input-grp1").css("display","block")
+        $(".input-grp").css("display","none")
+        $(".btn-c").addClass("btn1")
+        $(".btn-c").removeClass("btn2")
+    }
+}
+
