@@ -38,7 +38,6 @@ const start = () => {
         let spans = document.getElementsByTagName("link")[1]
         spans.remove()
     }
-    $(".pic").attr("th:src","@{/media/two.jpg}")
 }
 
 const toggle = () => {
@@ -84,11 +83,11 @@ const toggleBar = () => {
         } else {
             $(".sidebar").css("display", "block")
             $(".bar").css("display", "none")
-            $(".dashboard_banner").css("padding-left", "15%")
-            $(".pic").css("padding-left","15%")
-            $(".pic1").css("padding-left","15%")
-            $(".pic2").css("padding-left","15%")
-            $(".prev").css("margin-left","15%")
+            $(".dashboard_banner").css("padding-left", "13rem")
+            $(".pic").css("padding-left","13rem")
+            $(".pic1").css("padding-left","13rem")
+            $(".pic2").css("padding-left","13rem")
+            $(".prev").css("margin-left","13rem")
         }
     }
 }
@@ -121,5 +120,21 @@ const nexting = () =>{
     }
     else if($(".pic2").is(":visible")){
 
+    }
+}
+
+const inc = () =>{
+    if($(".second-nav").css("margin-top")=="62px"){
+        $(".second-nav").addClass("second-nav1")
+        $(".second-nav").removeClass("second-nav3")
+    } else if($(".second-nav").css("margin-top")=="173px"){
+        $(".second-nav").removeClass("second-nav1")
+        $(".second-nav").removeClass("second-nav3")
+    } else if($(".second-nav").css("margin-top")=="100px"){
+        $(".second-nav").addClass("second-nav3")
+        $(".second-nav").removeClass("second-nav1")
+    } else if($(".second-nav").css("margin-top")=="212px"){
+        $(".second-nav").removeClass("second-nav1")
+        $(".second-nav").removeClass("second-nav3")
     }
 }

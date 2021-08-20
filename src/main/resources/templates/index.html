@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head th:replace="head::frag(${title})">
     <meta charset="UTF-8">
     <title></title>
 </head>
 <body onload="start()">
 <div th:replace="navbar::nav"></div>
+<div th:replace="homenav::nav1"></div>
 <div th:replace="sidebar::side"></div>
 <i class="fas fa-bars bar" onclick="toggleBar()"></i>
 <img src="#" th:src="@{/media/one.jpg}" class="pic" alt="">
@@ -86,21 +87,21 @@
         $(".pic").css("display", "none")
         $(".pic1").css("display", "block")
         $(".pic2").css("display", "none")
-        setTimeout(frame1,3500)
+        setTimeout(frame1, 3500)
     }
     const frame1 = () => {
         $(".pic").css("display", "none")
         $(".pic1").css("display", "none")
         $(".pic2").css("display", "block")
-        setTimeout(frame2,3500)
+        setTimeout(frame2, 3500)
     }
     const frame2 = () => {
         $(".pic").css("display", "block")
         $(".pic1").css("display", "none")
         $(".pic2").css("display", "none")
-        setTimeout(frame,3500)
+        setTimeout(frame, 3500)
     }
-    setTimeout(frame,3500)
+    setTimeout(frame, 3500)
 </script>
 </body>
 </html>

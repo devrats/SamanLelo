@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="head::frag(title)">
+<head th:replace="head::frag(${title})">
     <meta charset="UTF-8">
     <title></title>
 </head>
 <body onload="start()">
 <div th:replace="navbar::nav"></div>
 <div th:replace="sidebar::side"></div>
+<div th:replace="homenav::nav1"></div>
 <i class="fas fa-bars bar" onclick="toggleBar()"></i>
 <section class="dashboard_banner">
 <div class="container">

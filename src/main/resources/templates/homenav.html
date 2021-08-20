@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head th:replace="Head::frag(${title})">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:fragment="nav1" class="layout1">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark second-nav justify-content-center">
+    <div class="container-fluid container">
+        <button onclick="inc()" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link sec-nav" th:classappend="${title}=='Grocery' ? 'active' : ''" aria-current="page"
+                       href="#" th:href="@{/grocery}">GROCERY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sec-nav" th:classappend="${title}=='Pantry' ? 'active' : ''" href="#"
+                       th:href="@{/pantry}">PANTRY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sec-nav" th:classappend="${title}=='Vegetables' ? 'active' : ''" href="#"
+                       th:href="@{/vegetable}">VEGETABLE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sec-nav" th:classappend="${title}=='Frutis' ? 'active' : ''" href="#"
+                       th:href="@{/fruit}">FRUITS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sec-nav" th:classappend="${title}=='Dairy' ? 'active' : ''" href="#"
+                       th:href="@{/dairy}">DAIRY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sec-nav" th:classappend="${title}=='Frozen Food' ? 'active' : ''" href="#"
+                       th:href="@{/frozenFood}">FROZEN FOOD</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+</div>
+</body>
+</html>

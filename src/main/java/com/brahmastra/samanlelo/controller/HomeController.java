@@ -25,7 +25,7 @@ public class HomeController {
 
     @RequestMapping("/user/cart")
     public String checkout(Model model){
-        model.addAttribute("title","Check-Out");
+        model.addAttribute("title","Cart");
         return "checkout";
     }
 }
