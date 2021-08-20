@@ -176,6 +176,13 @@ img {
     transition: 0.0s ease;
 }
 
+.background{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/bg.png");
+
+}
+
 .second-nav{
     margin-top: 62px;
     z-index: 3;
