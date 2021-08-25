@@ -226,3 +226,26 @@ img {
     font-style: italic;
     font-size: 15px;
 }
+
+.item-cut{
+    font-size: 12px;
+}
+
+.item-head{
+    color: darkviolet;
+    font-size: 22px;
+}
+
+.item-discount{
+    color: #ff105f;
+    font-size: 15px;
+}
+
+.button1{
+    margin-top: 50px;
+}
+
+.bot1{
+    margin-top: 25px;
+    width: 130px;
+}
