@@ -124,13 +124,15 @@ const nexting = () =>{
 }
 
 const inc = () =>{
-    if($(".second-nav").css("margin-top")=="62px"){
+    console.log($(".second-nav").css("margin-top"))
+    if($(".second-nav").css("margin-top")<="70px"){
+        console.log("mee")
         $(".second-nav").addClass("second-nav1")
         $(".second-nav").removeClass("second-nav3")
     } else if($(".second-nav").css("margin-top")=="173px"){
         $(".second-nav").removeClass("second-nav1")
         $(".second-nav").removeClass("second-nav3")
-    } else if($(".second-nav").css("margin-top")=="100px"){
+    } else if($(".second-nav").css("margin-top")=="6.3rem"){
         $(".second-nav").addClass("second-nav3")
         $(".second-nav").removeClass("second-nav1")
     } else if($(".second-nav").css("margin-top")=="212px"){
