@@ -35,6 +35,12 @@ public class HomeController {
         return "grocery1";
     }
 
+    @RequestMapping("/product")
+    public String product(Model model){
+        model.addAttribute("title","Product");
+        return "product";
+    }
+
     @RequestMapping("/pantry")
     public String pantry(Model model){
         model.addAttribute("title","Pantry");
