@@ -89,6 +89,12 @@ public class HomeController {
         return "checkout";
     }
 
+    @RequestMapping("/user/billing")
+    public String billing(Model model){
+        model.addAttribute("title","Billing");
+        return "billing";
+    }
+
     @RequestMapping("/user/currentOrder")
     public String currentOrder(Model model){
         model.addAttribute("title","Current Order");
