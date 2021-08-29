@@ -270,3 +270,34 @@ img {
     vertical-align: middle;
     padding: 0px 0px 0px 0px;
 }
+
+.product-image{
+    margin-left: 2rem;
+    width: 100%;
+    height: auto;
+}
+
+.product-layout{
+    display: inline-flex;
+    margin-top: 6rem;
+}
+
+.product-details{
+    margin-left: 5rem;
+    width: 50vw;
+}
+
+.product-commerce{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 1.4vw;
+}
+
+.quantity{
+    width: 40px;
+}
+
+.add-to-cart{
+    width: 100%;
+    color: black;
+}
