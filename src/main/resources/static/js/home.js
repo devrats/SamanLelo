@@ -40,6 +40,25 @@ const start = () => {
     }
 }
 
+const start8 = () => {
+    if (isMobile) {
+        $(".sidebar").css("display", "none")
+        $(".bar").css("display", "block")
+        $(".dashboard_banner").css("padding-left", "0px")
+        let spans = document.getElementsByTagName("link")[2]
+        spans.remove()
+        $('.table').dataTable({
+            "order": []
+        });
+    } else {
+        $(".sidebar").css("display", "block")
+        $(".bar").css("display", "none")
+        document.getElementById("banneres").className = "dashboard_banner"
+        let spans = document.getElementsByTagName("link")[1]
+        spans.remove()
+    }
+}
+
 const toggle = () => {
     if (isMobile) {
         if ($(".sidebar").is(":visible")) {
