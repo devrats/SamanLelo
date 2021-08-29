@@ -1,15 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:about="http://www.w3.org/1999/xhtml">
 <head th:replace="head::frag(${title})">
     <meta charset="UTF-8">
     <title></title>
 </head>
-<body onload="start()">
+<body onload="start()" class="body1">
 <div th:replace="navbar::nav"></div>
 <div th:replace="homenav::nav1"></div>
 <div th:replace="sidebar::side"></div>
 <i class="fas fa-bars bar" onclick="toggleBar()"></i>
 <section class="dashboard_banner" id="banneres">
+    <div class="row100">
+        <div class="col-75">
+            <div class="container3">
+                <form>
+                    <h2 class="heading" style="text-align: center">Profile<br><hr></h2>
+                    <div class="row100">
+                        <div class="col-58">
+                            <img src="" class="dp" th:src="@{/media/profile.png}"> </a>
+                            <h4>Name: Berlin ABC</h4>
+                            <h5>E-mail: abc@example.com</h5>
+                            <h5>Phone: #111110000</h5>
+                        </div>
+                        <div class="col-60" style="text-align: left">
+
+                            <h3>Saved Addresses:<br></h3>
+                            1. Street No. 5, <br>  W.John, <br>Lisbon
+                            <br>
+                            <br>
+                            2. Street No. 5, <br>  W.John, <br>Lisbon
+                            <br>
+                            <br>
+                            3. Street No. 5, <br>  W.John, <br>Lisbon
+                            <br>
+                        </div>
+                        <div class="container text-center botton1">
+                            <a> <input type="submit" class="btn btn-outline-danger btn-warning bot"
+                                                                       value="Edit Profile"> </a>
+                            <span>&emsp;</span>
+                            <a> <input type="submit" class="btn btn-outline-danger btn-info bot"
+                                                                       value="Add Address"> </a>
+                        </div>
+                    </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
     <div th:replace="about::about"></div>
 </section>
 </body>
