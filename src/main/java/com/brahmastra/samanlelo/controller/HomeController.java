@@ -6,8 +6,6 @@
  */
 
 package com.brahmastra.samanlelo.controller;
-
-
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

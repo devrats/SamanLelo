@@ -10,6 +10,89 @@
 <div th:replace="sidebar::side"></div>
 <i class="fas fa-bars bar" onclick="toggleBar()"></i>
 <section class="dashboard_banner" id="banneres">
+    <h1 class="greet">Hello Dev! Here Are Your Current Orders</h1>
+    <div class="card">
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Cart Id</th>
+                    <th scope="col">Order Date</th>
+                    <th scope="col">Accepted Arrival Date</th>
+                    <th scope="col">Cart</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>29/08/2021</td>
+                    <td>3/09/2021</td>
+                    <td><a href="#">See orders</a></td>
+                    <td>
+                        <div class="container text-center">
+                            <a href="#"> <input type="submit"
+                                                class="btn btn-outline-warning action"
+                                                value="Cancel"> </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>29/08/2021</td>
+                    <td>3/09/2021</td>
+                    <td><a href="#">See orders</a></td>
+                    <td>
+                        <div class="container text-center">
+                            <a href="#"> <input type="submit"
+                                                class="btn btn-outline-success action"
+                                                value="Cancel"> </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>29/08/2021</td>
+                    <td>3/09/2021</td>
+                    <td><a href="#">See orders</a></td>
+                    <td>
+                        <div class="container text-center">
+                            <a href="#"> <input type="submit"
+                                                class="btn btn-outline-success action"
+                                                value="Cancel"> </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>29/08/2021</td>
+                    <td>3/09/2021</td>
+                    <td><a href="#">See orders</a></td>
+                    <td>
+                        <div class="container text-center">
+                            <a href="#"> <input type="submit"
+                                                class="btn btn-outline-success action"
+                                                value="Cancel"> </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>29/08/2021</td>
+                    <td>3/09/2021</td>
+                    <td><a href="#">See orders</a></td>
+                    <td>
+                        <div class="container text-center">
+                            <a href="#"> <input type="submit"
+                                                class="btn btn-outline-success action"
+                                                value="Cancel"> </a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
     <div th:replace="about::about"></div>
 </section>
 </body>

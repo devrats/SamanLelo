@@ -249,3 +249,24 @@ img {
     margin-top: 25px;
     width: 130px;
 }
+
+.greet {
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 48px;
+    font-family: "Bell MT";
+    text-shadow: blue;
+    margin-top: 4.5rem;
+    color: brown;
+}
+
+.action {
+    height: 22px;
+    width: 55px;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px 0px 0px 0px;
+}
