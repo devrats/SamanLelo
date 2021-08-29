@@ -270,3 +270,10 @@ img {
     vertical-align: middle;
     padding: 0px 0px 0px 0px;
 }
+
+.product-image{
+    margin-top: 6rem;
+    margin-left: 2rem;
+    width: 40%;
+    height: auto;
+}
