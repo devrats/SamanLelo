@@ -104,4 +104,10 @@ public class HomeController {
         model.addAttribute("title","Previous Order");
         return "previousOrder";
     }
+
+    @RequestMapping("/user/seeCart")
+    public String seeCart(Model model){
+        model.addAttribute("title","Your Cart");
+        return "cart";
+    }
 }
