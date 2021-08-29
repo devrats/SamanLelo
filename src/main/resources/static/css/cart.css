@@ -101,7 +101,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-    font-size: 12px;
+    font-size: 20px;
 }
 
 .cart-total a{
@@ -161,4 +161,8 @@
     color: darkviolet;
     font-size: 12vh;
     font-family: "Times New Roman";
+}
+
+.total-padder{
+    margin-top: 4.5rem;
 }
