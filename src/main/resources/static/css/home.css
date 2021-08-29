@@ -254,9 +254,9 @@ img {
     text-align: center;
     font-weight: bolder;
     font-style: italic;
-    font-size: 80px;
+    font-size: 48px;
     font-family: "Bell MT";
     text-shadow: blue;
-    padding-top: 4rem;
+    margin-top: 4.5rem;
     color: brown;
 }
