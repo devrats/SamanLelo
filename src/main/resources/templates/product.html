@@ -10,7 +10,18 @@
 <div th:replace="homenav::nav1"></div>
 <i class="fas fa-bars bar" onclick="toggleBar()"></i>
 <section class="dashboard_banner">
-    <img src="#" class="product-image" th:src="@{/media/tide.jpg}" alt="">
+    <div class="product-layout">
+        <div>
+            <img src="#" class="product-image" th:src="@{/media/tide.jpg}" alt="">
+        </div>
+        <div class="product-details">
+            <div class="card">
+                <div class="card-body">
+                    <h1>Heading</h1>
+                </div>
+            </div>
+        </div>
+    </div>
     <div th:replace="about::about"></div>
 </section>
 </body>

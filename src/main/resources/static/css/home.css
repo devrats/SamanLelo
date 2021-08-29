@@ -272,8 +272,18 @@ img {
 }
 
 .product-image{
-    margin-top: 6rem;
     margin-left: 2rem;
-    width: 40%;
+    width: 100%;
     height: auto;
+}
+
+.product-layout{
+    display: inline-flex;
+    margin-top: 6rem;
+}
+
+.product-details{
+    text-align: center;
+    margin-left: 5rem;
+    width: 50vw;
 }
