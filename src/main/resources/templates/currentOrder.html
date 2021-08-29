@@ -11,6 +11,38 @@
 <i class="fas fa-bars bar" onclick="toggleBar()"></i>
 <section class="dashboard_banner" id="banneres">
     <h1 class="greet">Hello Dev! Here Are Your Previous Orders</h1>
+    <div class="card">
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Cart Id</th>
+                    <th scope="col">Order Date</th>
+                    <th scope="col">Accepted Arrival Date</th>
+                    <th scope="col">Cart</th>
+                    <th scope="col">Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <div class="container text-center">
+                            <a href="#"> <input type="submit"
+                                                class="btn btn-outline-success action"
+                                                value="Cancel"> </a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
     <div th:replace="about::about"></div>
 </section>
 </body>
