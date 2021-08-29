@@ -296,3 +296,8 @@ img {
 .quantity{
     width: 40px;
 }
+
+.add-to-cart{
+    width: 100%;
+    color: black;
+}
